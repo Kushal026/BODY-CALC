@@ -10,4 +10,54 @@ body{
 #container{
     display: flex;
     flex-wrap: wrap;
+    gap: 20px;
+}
+
+.chart-wrapper {
+    max-width: 680px;
+    width: 100%;
+    margin: 20px auto;
+    background: rgba(18, 18, 18, 0.85);
+    padding: 18px;
+    border-radius: 14px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.chart-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+.chart-tab-btn {
+    background: rgba(255, 255, 255, 0.08);
+    color: #e2e8f0;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.chart-tab-btn:hover {
+    background: rgba(255, 255, 255, 0.18);
+    border-color: rgba(255, 255, 255, 0.4);
+    transform: translateY(-1px);
+}
+
+.chart-tab-btn.active {
+    background: #0066ff;
+    color: #ffffff;
+    border-color: #3b82f6;
+    box-shadow: 0 0 12px rgba(0, 102, 255, 0.5);
+}
+
+canvas#fatPercentageChart {
+    width: 100% !important;
+    max-height: 420px;
 }
